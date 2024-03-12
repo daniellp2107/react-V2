@@ -46,6 +46,8 @@ const MonedasBilletes = styled.img`
 
   @media screen and (max-width: 500px){
     /* display: none; */
+    width: 50px;
+    height: 50px;
   }
 `;
 
