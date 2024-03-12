@@ -11,6 +11,7 @@ import { random } from "../../../utils/functions/NumeroAleatorio";
 import {TextoAVoz} from "../../../utils/functions/TextoAVoz";
 import {ordenAleatorio} from "../../../utils/functions/OrdenAleatorio";
 import { CntSiguiente, TextoGrande, TextoMediano, ImgSiguiente } from "../../../components/Styled.global";
+import ImagenRes from "../../../components/ImagenRes";
 import { useMutation } from "@apollo/client";
 import { AGREGAR_ACTIVIDAD_AVANCE } from "../../../utils/graphql/mutation";
 
@@ -154,7 +155,7 @@ const MostrarEjercicio = () => {
           </Opciones>
         ))}
       </CntOpciones>
-
+      <ImagenRes resultado={color ? true : false}/>
       <CntSiguiente onClick={()=>{
         setActualizar(true);
         setColor("");
