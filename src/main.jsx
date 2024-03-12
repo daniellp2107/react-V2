@@ -6,7 +6,9 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apo
 import {setContext} from 'apollo-link-context';
 
 const httpLink = createHttpLink ({
-  uri:'http://localhost:4000/',
+  // uri:'http://localhost:4000/',
+  uri:'https://gql.fly.dev/',
+  
 });
 
 const authLink = setContext ((_,{headers})=>{
