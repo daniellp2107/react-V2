@@ -110,7 +110,7 @@ const Carrusel = ({items, setActualizar, actualizar, nivel,palabraGen}) => {
         variables:{
           input:{
             avance:"1",
-            nomActividad:"Letra o Numero",
+            nomActividad:"Ejercicio con Palabras",
             palabraGen:palabraGen
           }
         }
